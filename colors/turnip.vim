@@ -15,7 +15,7 @@ endif
 
 " Palette
 let s:colors = {}
-let s:colors.dirt = ['71332d', 52]
+let s:colors.dirt = ['816160', 95]
 let s:colors.blue = ['000080', 18]
 let s:colors.paleBlue = ['5f5fab', 61]
 let s:colors.mutedPurple = ['816185', 96]
