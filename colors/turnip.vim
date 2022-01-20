@@ -108,6 +108,11 @@ if &background == 'light'
   call s:hi('Todo', 'seaGreen', 'white', 'bold')
   call s:hi('Title', 'deepPurple', 'white', 'bold')
   call s:hi('Directory', 'dirt')
+
+  call s:hi('Pmenu', 'darkerGray', 'lightestGray')
+  call s:hi('PmenuSel', 'black', 'lighterGray')
+  call s:hi('PmenuSbar', 'darkerGray', 'lightestGray')
+  call s:hi('PmenuThumb', 'middleGray', 'middleGray')
 else
   call s:hi('Normal', 'chalk', 'slate')
   call s:hi('Cursor', 'slate', 'lightGray')
@@ -148,6 +153,11 @@ else
   call s:hi('Todo', 'seaGreen', 'slate', 'bold')
   call s:hi('Title', 'deepPurple', 'slate', 'bold')
   call s:hi('Directory', 'dirt')
+
+  call s:hi('Pmenu', 'lightGray', 'darkestGray')
+  call s:hi('PmenuSel', 'lighterGray', 'darkGray')
+  call s:hi('PmenuSbar', 'darkerGray', 'darkestGray')
+  call s:hi('PmenuThumb', 'middleGray', 'middleGray')
 endif
 
 " C and C++
