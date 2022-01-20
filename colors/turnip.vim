@@ -113,6 +113,9 @@ if &background == 'light'
   call s:hi('PmenuSel', 'black', 'lighterGray')
   call s:hi('PmenuSbar', 'darkerGray', 'lightestGray')
   call s:hi('PmenuThumb', 'middleGray', 'middleGray')
+
+  call s:hi('Folded', 'dirt', 'white')
+  call s:hi('FoldColumn', 'lightestGray', 'white')
 else
   call s:hi('Normal', 'chalk', 'slate')
   call s:hi('Cursor', 'slate', 'lightGray')
@@ -158,6 +161,9 @@ else
   call s:hi('PmenuSel', 'lighterGray', 'darkGray')
   call s:hi('PmenuSbar', 'darkerGray', 'darkestGray')
   call s:hi('PmenuThumb', 'middleGray', 'middleGray')
+
+  call s:hi('Folded', 'dirt', 'slate')
+  call s:hi('FoldColumn', 'darkerGray', 'slate')
 endif
 
 " C and C++
