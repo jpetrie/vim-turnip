@@ -25,6 +25,7 @@ let s:colors.paleYellow = ['d7d791', 186]
 let s:colors.leafGreen = ['688663', 65]
 let s:colors.seaGreen = ['275d16', 22]
 let s:colors.richRed = ['a02016', 124]
+let s:colors.brightRed = ['c5291c', 160]
 let s:colors.burntOrange = ['c86627', 166]
 let s:colors.chalk = ['b2b2b2', 249]
 let s:colors.slate = ['1c1c1c', 234]
@@ -94,6 +95,7 @@ if &background == 'light'
   call s:hi('LineNr', 'lightGray')
   call s:hi('LineNrAbove', 'lightGray')
   call s:hi('LineNrBelow', 'lightGray')
+  call s:hi('SignColumn', 'white', 'white')
   call s:hi('NonText', 'lightestGray')
   call s:hi('SpecialKey', 'lightestGray')
 
@@ -105,6 +107,7 @@ if &background == 'light'
   call s:hi('PreProc', 'dirt')
   call s:hi('Identifier', 'mutedPurple')
 
+  call s:hi('Error', 'brightRed', 'white', 'bold')
   call s:hi('Todo', 'seaGreen', 'white', 'bold')
   call s:hi('Title', 'deepPurple', 'white', 'bold')
   call s:hi('Directory', 'dirt')
@@ -142,6 +145,7 @@ else
   call s:hi('LineNr', 'darkGray')
   call s:hi('LineNrAbove', 'darkGray')
   call s:hi('LineNrBelow', 'darkGray')
+  call s:hi('SignColumn', 'slate', 'slate')
   call s:hi('NonText', 'darkestGray')
   call s:hi('SpecialKey', 'darkestGray')
 
@@ -153,6 +157,7 @@ else
   call s:hi('PreProc', 'dirt')
   call s:hi('Identifier', 'mutedPurple')
 
+  call s:hi('Error', 'brightRed', 'slate', 'bold')
   call s:hi('Todo', 'seaGreen', 'slate', 'bold')
   call s:hi('Title', 'deepPurple', 'slate', 'bold')
   call s:hi('Directory', 'dirt')
