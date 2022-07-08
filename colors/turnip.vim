@@ -27,6 +27,8 @@ let s:colors.seaGreen = ['275d16', 22]
 let s:colors.richRed = ['a02016', 124]
 let s:colors.brightRed = ['c5291c', 160]
 let s:colors.burntOrange = ['c86627', 166]
+let s:colors.paleOrange = ['f9d8b4', 223]
+let s:colors.paleRed = ['f9d8d8', 224]
 let s:colors.chalk = ['b2b2b2', 249]
 let s:colors.slate = ['1c1c1c', 234]
 
@@ -112,6 +114,11 @@ if &background == 'light'
   call s:hi('Title', 'deepPurple', 'white', 'bold')
   call s:hi('Directory', 'dirt')
 
+  call s:hi('SpellBad', '', 'paleRed', '')
+  call s:hi('SpellCap', '', 'paleOrange', '')
+  call s:hi('SpellLocal', '', 'paleOrange', '')
+  call s:hi('SpellRare', '', 'paleOrange', '')
+
   call s:hi('Pmenu', 'darkerGray', 'lightestGray')
   call s:hi('PmenuSel', 'black', 'lighterGray')
   call s:hi('PmenuSbar', 'darkerGray', 'lightestGray')
@@ -161,6 +168,11 @@ else
   call s:hi('Todo', 'seaGreen', 'slate', 'bold')
   call s:hi('Title', 'deepPurple', 'slate', 'bold')
   call s:hi('Directory', 'dirt')
+
+  call s:hi('SpellBad', '', 'paleRed', '')
+  call s:hi('SpellCap', '', 'paleOrange', '')
+  call s:hi('SpellLocal', '', 'paleOrange', '')
+  call s:hi('SpellRare', '', 'paleOrange', '')
 
   call s:hi('Pmenu', 'lightGray', 'darkestGray')
   call s:hi('PmenuSel', 'lighterGray', 'darkGray')
